@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\NewMoney"
+    "\\NewMoney",
+    "\\NewMoney\\App_Start",
+    "\\NewMoney\\Controllers",
+    "\\NewMoney\\Properties"
   ],
-  "SelectedNode": "\\NewMoney\\NewMoney.sln",
+  "SelectedNode": "\\NewMoney\\App_Start\\Startup.Auth.cs",
   "PreviewInSolutionExplorer": false
 }
