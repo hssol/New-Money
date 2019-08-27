@@ -54,15 +54,15 @@ namespace NewMoney
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "2397285670544810",
+               appSecret: "76555798e082f99458db392baacff170");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "187696373251-ctn18fmluc0q226f8sr804e2p88bvbec.apps.googleusercontent.com",
+                ClientSecret = "ocHbi5TVjvVaaeQLTx7jz7zq"
+            });
         }
     }
 }
