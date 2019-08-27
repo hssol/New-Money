@@ -45,24 +45,24 @@ namespace NewMoney
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
-            // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+        // Uncomment the following lines to enable logging in with third party login providers
+        //app.UseMicrosoftAccountAuthentication(
+        //    clientId: "",
+        //    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+        //app.UseTwitterAuthentication(
+        //   consumerKey: "",
+        //consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "2397285670544810",
+               appSecret: "76555798e082f99458db392baacff170");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "187696373251-ctn18fmluc0q226f8sr804e2p88bvbec.apps.googleusercontent.com",
+                ClientSecret = "ocHbi5TVjvVaaeQLTx7jz7zq"
+            });
         }
     }
 }
