@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace NewMoney.Controllers
 {
@@ -29,8 +30,8 @@ namespace NewMoney.Controllers
             return View();
         }
 
-        
-        public IActionResult Dashboard()
+    
+        public ActionResult Dashboard()
         {
             return View();
         }
