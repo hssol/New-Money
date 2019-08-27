@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,7 +30,7 @@ namespace NewMoney.Controllers
         }
 
         
-        public ActionResult Dashboard()
+        public IActionResult Dashboard()
         {
             return View();
         }
