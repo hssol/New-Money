@@ -296,7 +296,6 @@
     <Content Include="Views\Home\Success.cshtml" />
     <Content Include="Views\Home\ManageCircle.cshtml" />
     <Content Include="Views\Home\Fire.cshtml" />
-    <Content Include="Views\Home\Send" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
