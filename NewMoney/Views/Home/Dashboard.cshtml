@@ -1,55 +1,51 @@
-<h1>Welcome to your Dashboard, @User.Identity.Name</h1>
-
-<button><a href="/home/managecircle">Manage Circle</a></button>
-<button><a href="/home/addbits">Add Bits</a></button>
-<button><a href="/home/sendbits">Send Bits</a></button>
-<button><a href="/home/cashoutbits">Cash out Bits</a></button>
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
     
     <div class="container">
         
         <div id="videoBlock">
-            
+
             <video autoplay loop muted>
-            <source src="video/Static.mp4" type="video/mp4"> 
+                <source src="video/Static.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            
+
             <div id="overlay">
-                
+
                 <div class="account">
                     <br>
-                        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-                        <div class="w3-container">
-                                <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-                                    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-                                    <a href="Send" class="w3-bar-item w3-button">Send Leaves!</a>
-                                    <a href="Index" class="w3-bar-item w3-button">Logout</a>
-                                    <a href="www.google.com" class="w3-bar-item w3-button">Help</a>
-                                </div>
-                    
-                    <h1 class="display-4"><span class="green2">Account Summary</span></h1>
-                    <h4><span class="yellow2">Time to rake the yard!</span></h4>
-                    <br>
-                    <h2><span class="yellow2">Account Holder:</span></h2>
-                    <h2><span class="green2">John Jacob Jingle-Heimer-Schmidt</span></h2>
-                    <br>
-                    <h2><span class="yellow2">Account Balance:</span></h2>
-                    <h2><span class="green3">$5.35</span></h2>
+                    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+                    <div class="w3-container">
+                        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+                            <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+                            <a href="/home/managecircle" class="w3-bar-item w3-button">Manage Your Circle!</a>
+                            <a href="/home/sendbits" class="w3-bar-item w3-button">Send Bits!</a>
+                            <a href="/home/addbits" class="w3-bar-item w3-button">Buy Bits!</a>
+                            <a href="/home/cashoutbits" class="w3-bar-item w3-button">Cash Out Bits!</a>
+                        </div>
+
+                        <h1 class="display-4"><span class="green2">Account Summary</span></h1>
+                        <h4><span class="yellow2">Time to rake the yard!</span></h4>
+                        <br>
+                        <h2><span class="yellow2">Account Holder:</span></h2>
+                        <h2><span class="green2">@User.Identity.Name</span></h2>
+                        <br>
+                        <h2><span class="yellow2">Account Balance:</span></h2>
+                        <h2><span class="green3">0 Bits!</span></h2>
+                    </div>
                 </div>
             </div>
+
+
         </div>
-    </div>
 </body>
 
 

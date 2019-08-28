@@ -2,11 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\NewMoney",
-    "\\NewMoney\\App_Start",
-    "\\NewMoney\\Controllers",
-    "\\NewMoney\\Properties",
     "\\NewMoney\\Views",
-    "\\NewMoney\\Views\\Account",
     "\\NewMoney\\Views\\Home"
   ],
   "SelectedNode": "\\NewMoney\\NewMoney.sln",
