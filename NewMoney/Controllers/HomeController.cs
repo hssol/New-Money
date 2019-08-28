@@ -10,31 +10,77 @@ namespace NewMoney.Controllers
 {
     public class HomeController : Controller
     {
-
+        // get: /home/index or /
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
-
-    
+        // get: /home/dashboard
         public ActionResult Dashboard()
         {
             return View();
         }
-
+// END OF ABOVE ROUTE SET // *********************************************************************************************
+        // get: /home/addbits
+        public ActionResult AddBits()
+        {
+            return View();
+        }
+        // post: /home/buybits
+        public ActionResult BuyBits()
+        {
+            System.Diagnostics.Debug.WriteLine("**********************POST ROUTE HIT SUCCESSFULLY**************************");
+            return Redirect("/home/success");
+        }
+// END OF ABOVE ROUTE SET // *********************************************************************************************
+        // get: /home/sendbits
+        public ActionResult SendBits()
+        {
+            return View();
+        }
+        // post: /home/shipbits
+        public ActionResult ShipBits()
+        {
+            System.Diagnostics.Debug.WriteLine("**********************POST ROUTE HIT SUCCESSFULLY**************************");
+            return Redirect("/home/success");
+        }
+// END OF ABOVE ROUTE SET // *********************************************************************************************
+        // get: /home/cashoutbits
+        public ActionResult CashOutBits()
+        {
+            return View();
+        }
+        // post: /home/cashtobits
+        public ActionResult CashToBits()
+        {
+            System.Diagnostics.Debug.WriteLine("**********************POST ROUTE HIT SUCCESSFULLY**************************");
+            return Redirect("/home/success");
+        }
+// END OF ABOVE ROUTE SET // *********************************************************************************************
+        // get: /home/managecircle
+        public ActionResult ManageCircle()
+        {
+            return View();
+        }
+        // post: /home/addfriend/{FriendId}
+        public ActionResult AddFriend()
+        {
+            System.Diagnostics.Debug.WriteLine("**********************POST ROUTE HIT SUCCESSFULLY**************************");
+            return Redirect("/home/success");
+        }
+        // post: /home/deletefriend/{FriendId}
+        public ActionResult DeleteFriend()
+        {
+            System.Diagnostics.Debug.WriteLine("**********************POST ROUTE HIT SUCCESSFULLY**************************");
+            return Redirect("/home/success");
+        }
+// END OF ABOVE ROUTE SET // *********************************************************************************************
+        // get: /home/success
+        public ActionResult Success()
+        {
+            return View();
+        }
+// END OF ABOVE ROUTE SET // *********************************************************************************************
     }
 }
