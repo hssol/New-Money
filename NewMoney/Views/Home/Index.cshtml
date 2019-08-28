@@ -1,9 +1,197 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+    
+    <div id="videoBlock">
+
+        <video autoplay id="myVideo" poster="tree.png"  autoplay muted>
+        <!-- <source src="video/Shortest.mp4" type="video/mp4"> -->
+        Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <div id="videoEnd" style="display:none"></div>
+    
+    <script>
+        document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+        function myHandler(e) {
+            if(!e) { e = window.event; }
+            // What you want to do after the event
+            document.getElementById('myVideo').style.display="none";
+            document.getElementById('videoEnd').style.display="block";
+        }
+    </script>
+
+    <div id="videoBlock">
+        <video  autoplay loop muted>
+        <source src="video/Peace.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+        
+        <div id="overlay">
+            <div class="account">
+                <partial name="RegisterPartial"/>
+                <partial name="LoginPartial"/>
+            </div>
+        </div>
+    </div>
+        
+        
+</div>
+</body>
+</html>
+
+<style>
+
+.account{
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 35%;
+    margin-top: 10%;
+    background-color: rgba(133, 131, 131, 0.548);
+    width: 45%;
+    height: 600px;
+    text-align: center;
+    border: 2px solid lightgreen;
+    z-index: 1;
+}
+.p_input{
+    text-align: center;
+    color: green;
+    background-color: rgb(255, 230, 0);
+    border: 2px solid green;
+    height: 80px;
+}
+.send_form{
+    text-align: center;
+    
+}
+.yellow2{
+    color: rgb(255, 230, 0);
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
 }
 
-<div class="jumbotron">
-    <h1>New Money</h1>
-    <p class="lead">New Money innovates the way people send money to eachother.</p>
-    <p><a href="/home/about" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+#videoBlock {
+    width: 100%; height: 100%;  
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+    }
+
+#overlay{
+    width: 100%; 
+    height:100%; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    z-index: 2;
+}
+
+#myVideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 120%;
+    z-index: 3;
+}
+.place_input{
+    text-align: center;
+    background-color: lightgrey;
+}
+#myInput{
+    text-align: center;
+    background-color: lightgrey;
+}
+.green2{
+    color: lightgreen;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+.green3{
+    font-size: 100px;
+    color: lightgreen;
+    text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;  
+}
+#sub_btn{
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.bottom{
+    height: 85px;
+    width: 200px;
+    margin-left: 465px;
+}
+#power{
+    height: 120px;
+    width: 120px;
+    background: transparent;
+}
+
+.error{
+color: red;
+}
+.link{
+    font-size: 20px;
+}
+.h1{
+    display: inline-block;
+}
+.left{
+    display: inline-block;
+    height: 500px;
+    width: 25%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.right{
+    display: inline-block;
+    height: 500px;
+    width: 20%;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 10%
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
+
