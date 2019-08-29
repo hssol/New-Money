@@ -6,6 +6,6 @@
     "\\NewMoney\\Views",
     "\\NewMoney\\Views\\Home"
   ],
-  "SelectedNode": "\\NewMoney\\Controllers\\PayPalController.cs",
+  "SelectedNode": "\\NewMoney\\Global.asax.cs",
   "PreviewInSolutionExplorer": false
 }
