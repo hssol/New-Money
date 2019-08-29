@@ -3,9 +3,16 @@
     "",
     "\\NewMoney",
     "\\NewMoney\\Controllers",
+<<<<<<< HEAD
     "\\NewMoney\\Models",
     "\\NewMoney\\Views\\Home"
   ],
   "SelectedNode": "\\NewMoney\\Controllers\\AccountController.cs",
+=======
+    "\\NewMoney\\Views",
+    "\\NewMoney\\Views\\Home"
+  ],
+  "SelectedNode": "\\NewMoney\\Global.asax.cs",
+>>>>>>> 2541ecdc4c6924d2029f93490f762ba5c8867d15
   "PreviewInSolutionExplorer": false
 }
