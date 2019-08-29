@@ -386,3 +386,10 @@ C:\Users\jinji\Source\Repos\New-Money\NewMoney\bin\PayPalAdaptivePaymentsSDK.dll
 C:\Users\jinji\Source\Repos\New-Money\NewMoney\bin\PayPalCoreSDK.dll
 C:\Users\jinji\Source\Repos\New-Money\NewMoney\bin\PayPal.xml
 C:\Users\jinji\Source\Repos\New-Money\NewMoney\bin\PayPalAdaptivePaymentsSDK.xml
+C:\Users\cyxru\Source\Repos\New-Money\NewMoney\bin\PayPal.dll
+C:\Users\cyxru\Source\Repos\New-Money\NewMoney\bin\PayPalAdaptivePaymentsSDK.dll
+C:\Users\cyxru\Source\Repos\New-Money\NewMoney\bin\PayPalCoreSDK.dll
+C:\Users\cyxru\Source\Repos\New-Money\NewMoney\bin\PayPal.xml
+C:\Users\cyxru\Source\Repos\New-Money\NewMoney\bin\PayPalAdaptivePaymentsSDK.xml
+C:\Users\cyxru\Source\Repos\New-Money\NewMoney\obj\Debug\NewMoney.Migrations.AddedBits.resources
+C:\Users\cyxru\Source\Repos\New-Money\NewMoney\obj\Debug\NewMoney.Migrations.switchedDB.resources

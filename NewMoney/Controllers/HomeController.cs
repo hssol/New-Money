@@ -5,20 +5,28 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNetCore.Http;
+using NewMoney.Models;
+using System.Windows.Forms;
 
 namespace NewMoney.Controllers
 {
+    
     public class HomeController : Controller
     {
+        public ApplicationDbContext MyContext = new ApplicationDbContext();
         // get: /home/index or /
         public ActionResult Index()
         {
+            ApplicationUser currentUser = MyContext.Users.Where(u => u.Email == User.Identity.Name).FirstOrDefault();
+            ViewBag.User = currentUser;
             return View();
         }
 
         // get: /home/dashboard
         public ActionResult Dashboard()
         {
+            ApplicationUser currentUser = MyContext.Users.Where(u => u.Email == @User.Identity.Name).FirstOrDefault();
+            ViewBag.User = currentUser;
             return View();
         }
 // END OF ABOVE ROUTE SET // *********************************************************************************************
