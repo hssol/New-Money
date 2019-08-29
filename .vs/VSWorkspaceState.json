@@ -2,9 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\NewMoney",
-    "\\NewMoney\\Views",
+    "\\NewMoney\\Controllers",
+    "\\NewMoney\\Models",
     "\\NewMoney\\Views\\Home"
   ],
-  "SelectedNode": "\\NewMoney\\NewMoney.sln",
+  "SelectedNode": "\\NewMoney\\Controllers\\AccountController.cs",
   "PreviewInSolutionExplorer": false
 }
