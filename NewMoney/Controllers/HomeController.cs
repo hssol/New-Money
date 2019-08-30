@@ -45,13 +45,34 @@ namespace NewMoney.Controllers
         // get: /home/sendbits
         public ActionResult SendBits()
         {
+            
+            List<ApplicationUser> ExceptUser = MyContext.Users.Where(u => u.Email == User.Identity.Name).ToList();
+            List<ApplicationUser> AllUsers = MyContext.Users.ToList();
+            List<ApplicationUser> SendableUsers = AllUsers.Except(ExceptUser).ToList();
+            ViewBag.Users = SendableUsers;
             return View();
         }
         // post: /home/shipbits
-        public ActionResult ShipBits()
+
+        [HttpPost]
+        public ActionResult ShipBits(string Email, int Bits)
         {
-            System.Diagnostics.Debug.WriteLine("**********************POST ROUTE HIT SUCCESSFULLY**************************");
-            return Redirect("/home/success");
+            ApplicationUser sender = MyContext.Users.Where(u => u.Email == @User.Identity.Name).FirstOrDefault();
+            ApplicationUser reciever = MyContext.Users.FirstOrDefault(u => u.Email == Email);
+            if (sender.Bits < Bits)
+            {
+                System.Diagnostics.Debug.WriteLine("Not enough Bits!");
+                return Redirect("/home/sendbits");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("Bits sent");          
+                sender.Bits -= Bits;
+                reciever.Bits += Bits;
+                MyContext.SaveChanges();
+                return Redirect("/home/success");
+            }
+            
         }
 // END OF ABOVE ROUTE SET // *********************************************************************************************
         // get: /home/cashoutbits
