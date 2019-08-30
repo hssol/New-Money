@@ -239,12 +239,10 @@
     <Compile Include="Migrations\201908271702209_NewMigration.Designer.cs">
       <DependentUpon>201908271702209_NewMigration.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Migrations\201908292119353_AddBitcol.cs" />
     <Compile Include="Migrations\201908292119353_AddBitcol.Designer.cs">
       <DependentUpon>201908292119353_AddBitcol.cs</DependentUpon>
     </Compile>
-
     <Compile Include="Migrations\201908292132309_AddedBits.cs" />
     <Compile Include="Migrations\201908292132309_AddedBits.Designer.cs">
       <DependentUpon>201908292132309_AddedBits.cs</DependentUpon>
@@ -252,7 +250,6 @@
     <Compile Include="Migrations\201908292246101_switched DB.cs" />
     <Compile Include="Migrations\201908292246101_switched DB.Designer.cs">
       <DependentUpon>201908292246101_switched DB.cs</DependentUpon>
-
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -352,17 +349,14 @@
     <EmbeddedResource Include="Migrations\201908271702209_NewMigration.resx">
       <DependentUpon>201908271702209_NewMigration.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Migrations\201908292119353_AddBitcol.resx">
       <DependentUpon>201908292119353_AddBitcol.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="Migrations\201908292132309_AddedBits.resx">
       <DependentUpon>201908292132309_AddedBits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908292246101_switched DB.resx">
       <DependentUpon>201908292246101_switched DB.cs</DependentUpon>
-
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
