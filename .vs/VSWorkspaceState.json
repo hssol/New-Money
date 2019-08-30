@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\NewMoney",
-    "\\NewMoney\\Models"
+    "\\NewMoney\\obj",
+    "\\NewMoney\\obj\\Debug",
+    "\\NewMoney\\obj\\Release"
   ],
   "SelectedNode": "\\NewMoney\\NewMoney.sln",
   "PreviewInSolutionExplorer": false
