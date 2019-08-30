@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\NewMoney",
-    "\\NewMoney\\Controllers",
-    "\\NewMoney\\Views",
-    "\\NewMoney\\Views\\Home"
+    "\\NewMoney\\Models"
   ],
-  "SelectedNode": "\\NewMoney\\Views\\Home\\Dashboard.cshtml",
+  "SelectedNode": "\\NewMoney\\NewMoney.sln",
   "PreviewInSolutionExplorer": false
 }
