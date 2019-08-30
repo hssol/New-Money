@@ -265,7 +265,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\mint.png" />
     <Content Include="Content\NewMoney_Logo.png" />
+    <Content Include="Content\Video_background\Fire_shaked.m4v" />
+    <Content Include="Content\Video_background\Leaffall_shaked.m4v" />
+    <Content Include="Content\Video_background\Peace_shaked.m4v" />
+    <Content Include="Content\Video_background\Receive_shaked.m4v" />
+    <Content Include="Content\Video_background\Send_shaked.m4v" />
+    <Content Include="Content\Video_background\Shortest_shaked.mp4" />
+    <Content Include="Content\Video_background\Smallest_shaked.m4v" />
+    <Content Include="Content\Video_background\Static_shaked.m4v" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

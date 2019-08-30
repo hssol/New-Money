@@ -2,10 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\NewMoney",
-    "\\NewMoney\\obj",
-    "\\NewMoney\\obj\\Debug",
-    "\\NewMoney\\obj\\Release"
+    "\\NewMoney\\Content",
+    "\\NewMoney\\Content\\Video_background",
+    "\\NewMoney\\Controllers",
+    "\\NewMoney\\Views",
+    "\\NewMoney\\Views\\Home",
+    "\\NewMoney\\Views\\PayPal",
+    "\\NewMoney\\Views\\Shared"
   ],
-  "SelectedNode": "\\NewMoney\\NewMoney.sln",
+  "SelectedNode": "\\NewMoney\\Controllers\\ManageController.cs",
   "PreviewInSolutionExplorer": false
 }

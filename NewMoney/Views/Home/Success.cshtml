@@ -1,12 +1,6 @@
-﻿<h1>You successfully completed an action</h1>
-<button><a href="/home/dashboard">Return to the Dashboard</a></button>
-<button><a href="/home/sendbits">Send Bits</a></button>
-<button><a href="/home/addbits">Add Bits</a></button>
-
-
+﻿
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta charset="UTF-8">
@@ -21,7 +15,7 @@
         <div id="videoBlock">
 
             <video autoplay loop muted>
-                <source src="video/Receive.mp4" type="video/mp4">
+                <source src="~/Content/Video_background/Peace_shaked.m4v" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
 
@@ -29,13 +23,16 @@
 
                 <div class="account">
                     <br>
-                  <h1>You successfully completed an action!</h1>
-              </div>
+                    <h1 class="hometitle">You successfully completed an action!</h1>
+                    <a class ="btn btn-default" href="/home/dashboard">Return to the Dashboard</a>
+                    <a class ="btn btn-default" href="/home/sendbits">Send Bits</a>
+                    <a class ="btn btn-default" href="/home/addbits">Add Bits</a>
+                </div>
           </div>
       </div>
-        </div>
-    </body>
-      </html>
+    </div>
+</body>
+</html>
 
     
     
@@ -52,10 +49,18 @@
     }
 </script>
 
-</html>
 
 <style>
-
+    .hometitle{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    text-shadow:
+      3px 3px 0 green,
+     -1px -1px 0 green,
+      1px -1px 0 green,
+      -1px 1px 0 green,
+       1px 1px 0 green;
+}
 .account{
     margin-left: 35%;
     margin-right: 35%;
