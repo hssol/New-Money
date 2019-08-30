@@ -2,8 +2,21 @@
   "ExpandedNodes": [
     "",
     "\\NewMoney",
+<<<<<<< HEAD
+    "\\NewMoney\\App_Start",
+    "\\NewMoney\\Migrations",
+    "\\NewMoney\\Models",
+    "\\NewMoney\\Views",
+    "\\NewMoney\\Views\\Account",
+    "\\NewMoney\\Views\\Home",
+    "\\NewMoney\\Views\\PayPal",
+    "\\NewMoney\\Views\\Shared"
+  ],
+  "SelectedNode": "\\NewMoney\\Views\\Account\\Register.cshtml",
+=======
     "\\NewMoney\\Models"
   ],
   "SelectedNode": "\\NewMoney\\NewMoney.sln",
+>>>>>>> 7bb495377c8ba60b053c81aaa43a75090a70ddac
   "PreviewInSolutionExplorer": false
 }

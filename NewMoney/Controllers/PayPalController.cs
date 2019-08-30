@@ -146,6 +146,7 @@ namespace NewMoney.Controllers
             currentUser.Bits += 10000;
             MyContext.SaveChanges();
 
+
             return View("PaypalSuccess");
         }
 

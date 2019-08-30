@@ -6,23 +6,35 @@ using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNetCore.Http;
 using NewMoney.Models;
+<<<<<<< HEAD
+=======
 using System.Windows.Forms;
+>>>>>>> 7bb495377c8ba60b053c81aaa43a75090a70ddac
 
 namespace NewMoney.Controllers
 {
     
     public class HomeController : Controller
     {
+<<<<<<< HEAD
+        public ApplicationDbContext dbConext = new ApplicationDbContext();
+        // get: /home/index or /
+        public ActionResult Index()
+        {  
+            
+=======
         public ApplicationDbContext MyContext = new ApplicationDbContext();
         // get: /home/index or /
         public ActionResult Index()
         {
             ApplicationUser currentUser = MyContext.Users.Where(u => u.Email == User.Identity.Name).FirstOrDefault();
             ViewBag.User = currentUser;
+>>>>>>> 7bb495377c8ba60b053c81aaa43a75090a70ddac
             return View();
         }
 
         // get: /home/dashboard
+        //[Authorize]
         public ActionResult Dashboard()
         {
             ApplicationUser currentUser = MyContext.Users.Where(u => u.Email == @User.Identity.Name).FirstOrDefault();
