@@ -5,18 +5,23 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNetCore.Http;
+using NewMoney.Models;
 
 namespace NewMoney.Controllers
 {
+    
     public class HomeController : Controller
     {
+        public ApplicationDbContext dbConext = new ApplicationDbContext();
         // get: /home/index or /
         public ActionResult Index()
-        {
+        {  
+            
             return View();
         }
 
         // get: /home/dashboard
+        //[Authorize]
         public ActionResult Dashboard()
         {
             return View();

@@ -2,10 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\NewMoney",
-    "\\NewMoney\\Controllers",
+    "\\NewMoney\\App_Start",
+    "\\NewMoney\\Migrations",
+    "\\NewMoney\\Models",
     "\\NewMoney\\Views",
-    "\\NewMoney\\Views\\Home"
+    "\\NewMoney\\Views\\Account",
+    "\\NewMoney\\Views\\Home",
+    "\\NewMoney\\Views\\PayPal",
+    "\\NewMoney\\Views\\Shared"
   ],
-  "SelectedNode": "\\NewMoney\\Global.asax.cs",
+  "SelectedNode": "\\NewMoney\\Views\\Account\\Register.cshtml",
   "PreviewInSolutionExplorer": false
 }
