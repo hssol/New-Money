@@ -28,7 +28,7 @@ namespace NewMoney.Controllers
         }
 
         // get: /home/dashboard
-        //[Authorize]
+        [Authorize]
         public ActionResult Dashboard()
         {
             ApplicationUser currentUser = MyContext.Users.Where(u => u.Email == @User.Identity.Name).FirstOrDefault();

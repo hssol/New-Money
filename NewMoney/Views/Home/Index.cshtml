@@ -14,7 +14,7 @@
     <div id="videoBlock">
 
         <video autoplay id="myVideo" poster="tree.png"  muted>
-        <source src="~/Content/Shortest_shaked.mp4" type="video/mp4">
+        <source src="~/Content/Video_background/Shortest_shaked.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     </div>
@@ -33,12 +33,15 @@
 
     <div id="videoBlock">
         <video  autoplay loop muted>
-        <source src="video/Peace.mp4" type="video/mp4"> 
+        <source src="~/Content/Video_background/Peace_shaked.m4v" type="video/mp4"> 
             Your browser does not support the video tag.
         </video>
         
         <div id="overlay">
             <div class="account">
+                <img src="~/Content/NewMoney_Logo.png" />
+                <h1 class="hometitle">Welcome to NuMoney</h1>
+                <h3 class="hometitle">Please sign in for access!</h3>
                 <partial name="RegisterPartial"/>
                 <partial name="LoginPartial"/>
             </div>
@@ -52,6 +55,17 @@
 
 <style>
 
+.hometitle{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+    text-shadow:
+      3px 3px 0 green,
+     -1px -1px 0 green,
+      1px -1px 0 green,
+      -1px 1px 0 green,
+       1px 1px 0 green;
+}
+
 .account{
     position: absolute;
     margin-left: 30%;
@@ -61,7 +75,7 @@
     width: 45%;
     height: 600px;
     text-align: center;
-    border: 2px solid lightgreen;
+    
     z-index: 1;
 }
 .p_input{
