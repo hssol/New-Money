@@ -11,6 +11,7 @@ namespace NewMoney.Controllers
 {
     public class PayPalController : Controller
     {
+        public ApplicationDbContext MyContext = new ApplicationDbContext();
         private Payment payment;
         // GET: PayPal
         public ActionResult Index()
@@ -141,6 +142,10 @@ namespace NewMoney.Controllers
                 //PaypalLogger.Log("Error: " + ex.Message);
                 //return View("PaypalFail");
             }
+            ApplicationUser currentUser = MyContext.Users.Where(u => u.Email == @User.Identity.Name).FirstOrDefault();
+            currentUser.Bits += 10000;
+            MyContext.SaveChanges();
+
 
             return View("PaypalSuccess");
         }

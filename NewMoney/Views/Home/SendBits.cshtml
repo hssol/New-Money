@@ -34,10 +34,16 @@
                         <h1 class="display-4"><span class="green2">Sending Money</span></h1>
                         <h3><span class="yellow2">Let's send some leaves!</span></h3>
                         <br>
-                        <form class="sending" action="/home/shipbits">
-                            <input class="p_input" type="text" placeholder="Receiver's Name"><br>
+                        <form class="sending" name="Email" action="/home/shipbits" method="post">
+                            <select class="p_input" type="text" name="Email">
+                                @foreach(var user in @ViewBag.Users)
+                                {
+                                    <option type="email" value="@user.Email">@user.Email</option>
+                                }
+                            </select>                                
                             <br>
-                            <input class="p_input" type="number" placeholder="How many leaves?"><br>
+                            <br>
+                            <input class="p_input" type="number" placeholder="How many Bits?" name="Bits"><br>
                             <br>
                             <button id="sub_btn" type="submit">
                                 <img id="power" src="images/mint.png">

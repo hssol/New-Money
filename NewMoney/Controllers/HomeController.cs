@@ -5,20 +5,40 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNetCore.Http;
+using NewMoney.Models;
+<<<<<<< HEAD
+=======
+using System.Windows.Forms;
+>>>>>>> 7bb495377c8ba60b053c81aaa43a75090a70ddac
 
 namespace NewMoney.Controllers
 {
+    
     public class HomeController : Controller
     {
+<<<<<<< HEAD
+        public ApplicationDbContext dbConext = new ApplicationDbContext();
+        // get: /home/index or /
+        public ActionResult Index()
+        {  
+            
+=======
+        public ApplicationDbContext MyContext = new ApplicationDbContext();
         // get: /home/index or /
         public ActionResult Index()
         {
+            ApplicationUser currentUser = MyContext.Users.Where(u => u.Email == User.Identity.Name).FirstOrDefault();
+            ViewBag.User = currentUser;
+>>>>>>> 7bb495377c8ba60b053c81aaa43a75090a70ddac
             return View();
         }
 
         // get: /home/dashboard
+        //[Authorize]
         public ActionResult Dashboard()
         {
+            ApplicationUser currentUser = MyContext.Users.Where(u => u.Email == @User.Identity.Name).FirstOrDefault();
+            ViewBag.User = currentUser;
             return View();
         }
 // END OF ABOVE ROUTE SET // *********************************************************************************************
@@ -37,13 +57,34 @@ namespace NewMoney.Controllers
         // get: /home/sendbits
         public ActionResult SendBits()
         {
+            
+            List<ApplicationUser> ExceptUser = MyContext.Users.Where(u => u.Email == User.Identity.Name).ToList();
+            List<ApplicationUser> AllUsers = MyContext.Users.ToList();
+            List<ApplicationUser> SendableUsers = AllUsers.Except(ExceptUser).ToList();
+            ViewBag.Users = SendableUsers;
             return View();
         }
         // post: /home/shipbits
-        public ActionResult ShipBits()
+
+        [HttpPost]
+        public ActionResult ShipBits(string Email, int Bits)
         {
-            System.Diagnostics.Debug.WriteLine("**********************POST ROUTE HIT SUCCESSFULLY**************************");
-            return Redirect("/home/success");
+            ApplicationUser sender = MyContext.Users.Where(u => u.Email == @User.Identity.Name).FirstOrDefault();
+            ApplicationUser reciever = MyContext.Users.FirstOrDefault(u => u.Email == Email);
+            if (sender.Bits < Bits)
+            {
+                System.Diagnostics.Debug.WriteLine("Not enough Bits!");
+                return Redirect("/home/sendbits");
+            }
+            else
+            {
+                System.Diagnostics.Debug.WriteLine("Bits sent");          
+                sender.Bits -= Bits;
+                reciever.Bits += Bits;
+                MyContext.SaveChanges();
+                return Redirect("/home/success");
+            }
+            
         }
 // END OF ABOVE ROUTE SET // *********************************************************************************************
         // get: /home/cashoutbits
