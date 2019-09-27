@@ -1,5 +1,5 @@
 # Nu-Money
-(TEAM PROJECT) NuMoney is our attempt at recreating a Money Transfer as a Service (MTaaS) app. Collab roles as follows: CaptGillespie--Front end/visuals, AndrewJJT/hssol--Back end server/database/API calls
+NuMoney is our attempt at recreating a Money Transfer as a Service (MTaaS) app. Collab roles as follows: CaptGillespie--Front end/visuals, AndrewJJT/hssol--Back end server/database/API calls
 
 Summary:
 Our project will be a web app built in C# where the goal is to create a basic money transfer
